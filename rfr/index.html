@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Richard's Food Review</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">RK</a>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="business.html">Richards Food Review</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row text-center">
+      <div class="col-sm-4 content-box">
+        <h3 class="section-title">About the Brand</h3>
+        <p>
+          Welcome to <strong>Richard’s Food Review</strong>: the food challenge where I eat for 60 seconds, then deliver an honest review in the next 60 seconds. 2 minutes or less of your time for whether your time and money is worth it.
+        </p>
+      </div>
+      <div class="col-sm-4 content-box">
+        <h3 class="section-title">Brand Concept</h3>
+        <p>
+          “<strong>60 Seconds or Less</strong>” is all about fast, raw, and entertaining food takes. I aim to build a brand that’s brutally honest. No editing, just raw reaction.
+        </p>
+      </div>
+      <div class="col-sm-4 content-box">
+        <h3 class="section-title">Content & Expansion</h3>
+        <p>
+          I'm currently on Instagram and Tiktok, as well as YouTube aiming to post daily.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <h3 class="section-title">Where to Find Me</h3>
+      <p>Follow my content creation:</p>
+      <div class="social-icons">
+        <a href="https://www.youtube.com/@richardsfoodreview" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@rj.swings?_t=ZT-8ygNEJFTYzO&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/bigricheatz?igsh=MTdiMzlwZmMzdXRwZw%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="contact-form mt-5">
+      <h3 class="section-title text-center">Want Me to Review Your Restaurant?</h3>
+      <p class="text-center">Fill out the form below and I’ll get back to you!</p>
+      <form id="contactForm" action="https://formspree.io/f/xnnzgeqn" method="POST">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="restaurant" class="form-label">Restaurant Name</label>
+            <input type="text" class="form-control" id="restaurant" name="restaurant" placeholder="Tasty Tacos NYC" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" id="location" name="location" placeholder="Brooklyn, NY" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="price" class="form-label">Price Range</label>
+            <select class="form-select" id="price" name="price">
+              <option value="$">$</option>
+              <option value="$$">$$</option>
+              <option value="$$$">$$$</option>
+            </select>
+          </div>
+          <div class="col-12 mb-3">
+            <label for="message" class="form-label">Tell Me About Your Restaurant</label>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Why should I review it? What makes it unique?" required></textarea>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-submit mt-3">Submit Request</button>
+        </div>
+      </form>
+
+      <div id="formMessage" class="alert alert-success alert-dismissible fade show mt-4 d-none" role="alert">
+        ✅ <strong>Thank you!</strong> Your request has been submitted. I'll get back to you soon.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+
+    <footer class="text-center mt-5">
+      &copy; 2025 Richard J. Kim | Richards Food Review
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
