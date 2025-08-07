@@ -1,0 +1,84 @@
+:root {
+  --iron-black: #0D0D0D;
+  --forge-red: #B21F1F;
+  --armor-gray: #555555;
+  --parchment: #EAE3D2;
+  --ash-white: #FEFCFD;
+}
+
+body {
+  background-color: var(--parchment);
+  color: var(--iron-black);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  background-color: var(--iron-black);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--ash-white) !important;
+}
+
+.nav-link:hover {
+  color: var(--forge-red) !important;
+}
+
+.section-title {
+  text-transform: uppercase;
+  color: var(--forge-red);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--forge-red);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.content-box {
+  padding: 20px;
+}
+
+.profile-img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--armor-gray);
+  border: 4px solid var(--forge-red);
+}
+
+.btn-custom,
+.btn-submit {
+  background-color: var(--forge-red);
+  color: var(--ash-white);
+  border: none;
+}
+
+.btn-custom:hover,
+.btn-submit:hover {
+  background-color: #8e1a1a;
+}
+
+.contact-form {
+  background-color: var(--ash-white);
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.social-icons a {
+  color: var(--iron-black);
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: var(--forge-red);
+}
+
+footer {
+  background-color: var(--armor-gray);
+  color: var(--ash-white);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 40px;
+}
